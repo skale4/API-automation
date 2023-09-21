@@ -1,0 +1,17 @@
+{
+  "name": "api-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/skale4/API-automation.git",
+  "author": "sayali kale <sayali.kale@bolt.eu>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.38.0",
+    "@types/node": "^20.6.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "request": "^2.88.2",
+    "unirest": "^0.6.0"
+  }
+}
