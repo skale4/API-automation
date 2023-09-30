@@ -30,14 +30,19 @@ test.describe("Get the API response and match with the UI", () => {
     const apiSplitDateUnixFormat =
       apiDojoResponse.chart.result[0].events.splits[1625112000].date;
     const apiSplitDate = toDate(apiSplitDateUnixFormat);
+    const apiRegularMarketPrice =
+      apiDojoResponse.chart.result[0].meta.regularMarketPrice;
 
-    // Open the web application UI and compare values with response
+    // Open the finance web application UI
     const financeUiPage = new FinanceChartPage(page);
     await financeUiPage.goToNvdaChartUrl();
     await financeUiPage.clickYearRangeButton();
 
-    // Assertion to compare split ratio
+    // Compare UI values with API response
     await expect(await financeUiPage.getSplittedValue()).toEqual(apiSplitRatio);
     await expect(await financeUiPage.getSplittedDate()).toEqual(apiSplitDate);
+    await expect(String(apiRegularMarketPrice)).toEqual(
+      await financeUiPage.getRegularMarketPrice()
+    );
   });
 });

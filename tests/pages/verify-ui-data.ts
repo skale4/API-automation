@@ -5,6 +5,7 @@ export class FinanceChartPage {
   readonly splitValueLocator: Locator;
   readonly splitDateLocator: Locator;
   readonly yearValueLocator: Locator;
+  readonly regularMarketPriceLocator: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -16,6 +17,9 @@ export class FinanceChartPage {
     );
     this.yearValueLocator = this.page.locator(
       "//*[@data-test='rangeList']//*[text()='5Y']"
+    );
+    this.regularMarketPriceLocator = this.page.locator(
+      "[data-test='qsp-price'][data-field='regularMarketPrice']"
     );
   }
 
@@ -39,5 +43,12 @@ export class FinanceChartPage {
       .valueOf()
       .split(" ");
     return splittedDate[1];
+  }
+
+  async getRegularMarketPrice() {
+    const regularMarketPrice = (
+      await this.regularMarketPriceLocator.innerText()
+    ).valueOf();
+    return regularMarketPrice;
   }
 }
