@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "CFC",
+      "value": "AQABCAFlF_1lS0MgWQS2&s=AQAAAF1jmBH6&g=ZRauUA",
+      "domain": ".consent.yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "A3",
+      "value": "d=AQABBEauFmUCED_fJGp9K8XWlpggH98khrQFEgABCAH1F2VKZeElb2UB9qMAAAcIPqwWZXbKbPI&S=AQAAAv8XxPkryFru4VvR1rUo8d4",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "A1",
+      "value": "d=AQABBEauFmUCED_fJGp9K8XWlpggH98khrQFEgABCAH1F2VKZeElb2UB9qMAAAcIPqwWZXbKbPI&S=AQAAAv8XxPkryFru4VvR1rUo8d4",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "GUC",
+      "value": "AQABCAFlF_VlSkIgWQS2&s=AQAAAE3fPG7w&g=ZRauUA",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "GUCS",
+      "value": "ATQTe9c8",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "A1S",
+      "value": "d=AQABBEauFmUCED_fJGp9K8XWlpggH98khrQFEgABCAH1F2VKZeElb2UB9qMAAAcIPqwWZXbKbPI&S=AQAAAv8XxPkryFru4VvR1rUo8d4",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cmp",
+      "value": "t=1695985094&j=1&u=1---&v=96",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "EuConsent",
+      "value": "CPy3MMAPy3MMAAOACBETDYCoAP_AAEfAACiQgoNB9G7WTXNncXp_YPs0eYUX1VBp4uAxBgCBA-ABzBsUIIwGVmEzJEyIJigCGAIAoGJBIEFtGAlAQFAQIIAFABHICEEAJBAAIGAAECAAAgBACBBIEwAAAAAQoUBXMhQgkAdEQFoIQchAlgAgAQIAICAEoIhBAgQAEAAgQABICEAIgigAggAAAAIAAAAEAFAIEQBABgECB____eAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQTFABINSogCbAgJCaQMIoEAIgqCACgUAAAAECBAAAmDAoQRgEqMBEAIEQABAAAAABQEACAAACABCAAIAgAQAAACAQAAAAQCAAAEAAAAAAAAAAAAAQAgAAAAAAQgCIQAhBAACAACAAgoAAIABAAAAAAEAIARCAAAAAAABAAAAAAIAQBAABAAAAAAQAAAAAAAAQIACADAAADgkbLUAMNABgACIKAiADAAEQUBUAGAAIgoA",
+      "domain": ".yahoo.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
