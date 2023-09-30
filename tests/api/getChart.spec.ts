@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 import { toDate } from "../pages/utils";
+import { FinanceChartPage } from "../pages/verify-ui-data";
 
-test.describe("API Get the API response and match with the UI", () => {
-  test("get API response", async ({ page }) => {
+test.describe("Get the API response and match with the UI", () => {
+  test("get API response and match with UI value", async ({ page }) => {
     // Call get chart API and store the response
     const headers = {
       "X-RapidAPI-Key": "c1fc1391d2msh845472d334e00fep1a9126jsn3ce163516dab",
@@ -31,25 +32,12 @@ test.describe("API Get the API response and match with the UI", () => {
     const apiSplitDate = toDate(apiSplitDateUnixFormat);
 
     // Open the web application UI and compare values with response
-    const splitValueLocator = await page.locator(
-      "//div[@class='eventMarkers splits']//div[@class='ciq-field-dark']"
-    );
-    const splitDateLocator = await page.locator(
-      "//div[@class='eventMarkers splits']//div[@class='ciq-field-light']"
-    );
-    const yearValueLocator = await page.locator(
-      "//*[@data-test='rangeList']//*[text()='5Y']"
-    );
+    const financeUiPage = new FinanceChartPage(page);
+    await financeUiPage.goToNvdaChartUrl();
+    await financeUiPage.clickYearRangeButton();
 
-    await page.goto("https://finance.yahoo.com/chart/NVDA");
-    await yearValueLocator.click();
-    const splitValue = (await splitValueLocator.innerText()).valueOf();
-    const splittedValue = splitValue.split(" ");
-
-    const splitDate = (await splitDateLocator.innerText()).valueOf();
-    const splittedDate = splitDate.split(" ");
-
-    await expect(splittedValue[1]).toEqual(apiSplitRatio);
-    await expect(splittedDate[1]).toEqual(apiSplitDate);
+    // Assertion to compare split ratio
+    await expect(await financeUiPage.getSplittedValue()).toEqual(apiSplitRatio);
+    await expect(await financeUiPage.getSplittedDate()).toEqual(apiSplitDate);
   });
 });
